@@ -1,0 +1,38 @@
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  grid-template-areas:
+    "logo burger"
+    "main main"
+    "main main";
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(59, 57, 57);
+}
+h1 {
+  color: yellow;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.burger {
+  grid-area: burger;
+}
+
+.main {
+  grid-area: main;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
