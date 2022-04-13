@@ -1,38 +1,94 @@
-.container {
-  display: grid;
-  grid-template-columns: 1.5fr 0.5fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  justify-items: stretch;
-  grid-template-areas:
-    "logo burger"
-    "main main"
-    "main main";
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  background-color: rgb(44, 41, 38);
 }
-header {
+a {
+  text-decoration: none;
+}
+
+#head-container {
+  height: 80px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  background-color: rgb(59, 57, 57);
-}
-h1 {
-  color: yellow;
+  background-color: rgb(29, 26, 24);
+  padding: 0 20px;
 }
 
 .logo {
-  grid-area: logo;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(238, 164, 80);
+  text-transform: uppercase;
 }
 
-.burger {
-  grid-area: burger;
-}
-
-.main {
-  grid-area: main;
-}
-.main {
+#head-container ul {
+  list-style: none;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+#head-container li {
+  margin: 0 16px;
+}
+
+#head-container nav a {
+  color: rgb(185, 131, 31);
+  font-size: 20px;
+}
+#head-container nav a:hover {
+  color: rgb(228, 163, 44);
+}
+
+main h1 {
+  text-align: center;
+  color: rgb(238, 164, 80);
+  font-size: 48px;
+}
+
+#prodects {
+  width: 80%;
+  margin: 50px auto;
+}
+
+#prodects ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+#prodects li {
+  list-style: none;
+}
+
+.food-item img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.food-item {
+  background-color: rgb(228, 206, 182);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.food-item-content {
+  padding: 16px;
+  text-align: center;
+}
+
+.buy-links {
+  background-color: rgb(228, 157, 44);
+  padding: 8px 24px;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 1px 2px rgb(44, 41, 38, 0.2);
+}
+
+.buy-link a:hover {
+  background-color: rgb(221, 134, 34);
 }
