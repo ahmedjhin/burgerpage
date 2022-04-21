@@ -5,38 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="container">
-      <h1 class="logo">WEBFOOD</h1>
-
+    <header id="head-container">
+      <a href="#" class="logo">WEBFOOD</a>
       <nav>
-        <a class="burger" href="#">browser meals</a>
-        <a class="burger" href="#">my orders</a>
+        <ul>
+          <li><a class="burger" href="#">browser meals</a></li>
+          <li><a class="burger" href="#">my orders</a></li>
+        </ul>
       </nav>
+      <a href="#aside-drawer" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
     </header>
-    <main class="main">
-      <dive>
-        <img
-          src="/images/cheeseburgers.jpg"
-          rel=" shesburger"
-          height="300px"
-          width="300px"
-        />
-        <p>cheeseburgers</p>
-        <a class="buy-links" href="#"> add to cart</a>
-      </dive>
-      <dive>
-        <img
-          src="/images/risotto.jpg"
-          rel=" risotto"
-          height="300px"
-          width="300px"
-        />
-        <p>risotto</p>
-        <a class="buy-links" href="#"> add to cart</a>
-      </dive>
+    <main>
+      <h1>broswer our delishes meals</h1>
+      <section id="prodects">
+        <ul>
+          <li class="food-item">
+            <article>
+              <img src="/images/cheeseburgers.jpg" rel=" shesburger" />
+              <div class="food-item-content">
+                <h2>cheeseburge</h2>
+                <a class="buy-links" href="#"> add to cart</a>
+              </div>
+            </article>
+          </li>
+          <li class="food-item">
+            <article>
+              <img src="/images/risotto.jpg" rel=" risotto" />
+
+              <div class="food-item-content">
+                <h2>risot</h2>
+                <a class="buy-links" href="#"> add to cart</a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
     </main>
+    <aside id="aside-drawer">
+      <nav>
+        <ul>
+          <li><a class="burger" href="#">browser meals</a></li>
+          <li><a class="burger" href="#">my orders</a></li>
+        </ul>
+      </nav>
+    </aside>
   </body>
 </html>
